@@ -10,6 +10,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+
+      - name: Update lockfile
+        run: uv lock
+        
       - name: Build image
         run: |
           docker build -f Dockerfile.dev -t qpu-server .
