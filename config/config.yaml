@@ -1,5 +1,5 @@
 proto:
-  max_workers: 2
+  max_workers: 100
   address: "[::]:51021"
 
 #device_id: "anemone"
