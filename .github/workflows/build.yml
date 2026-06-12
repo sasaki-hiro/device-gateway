@@ -18,11 +18,11 @@ jobs:
         
       - name: Build image
         run: |
-          docker build -f Dockerfile.dev -t qpu-server .
+          docker build -f Dockerfile.dev -t qpu-server_qulacs .
 
       - name: Save image
         run: |
-          docker save qpu-server | gzip > device_gateway.tar.gz
+          docker save qpu-server_qulacs | gzip > device_gateway.tar.gz
           
       - name: Upload artifact
         uses: actions/upload-artifact@v4
