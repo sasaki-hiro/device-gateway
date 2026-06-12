@@ -1,6 +1,6 @@
 {
-  "name": "Kawasaki",
-  "device_id": "Kawasaki",
+  "name": "qulacs_sim",
+  "device_id": "qulacs_sim",
   "qubits": [
     {
       "id": 0,
