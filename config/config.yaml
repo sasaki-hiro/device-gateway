@@ -1,20 +1,20 @@
 proto:
   max_workers: 100
-  address: "[::]:51021"
+  address: "[::]:51022"
 
 #device_id: "anemone"
 device_info:
-  device_id: "qiskit_sim"
+  device_id: "qulacs_sim"
   provider_id: "qiqb"
   max_qubits: 7
   max_shots: 10000
 
 # Plugin configuration
 plugin:
-  name: "qiskit" # Available options: "qulacs", "qubex", "qiskit"
+  name: "qulacs" # Available options: "qulacs", "qubex", "qiskit"
   backend:
-    module_path: "device_gateway.plugins.qiskit_aer.backend"
-    class_name: "AerBackend"
+    module_path: "device_gateway.plugins.qulacs.backend"
+    class_name: "QulacsBackend"
 
 # Qubex plugin configuration. Uncomment to use Qubex backend
 # plugin:
